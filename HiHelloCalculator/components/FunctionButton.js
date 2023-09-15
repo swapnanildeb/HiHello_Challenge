@@ -1,15 +1,6 @@
 import { StyleSheet, View, Pressable, Text, Dimensions } from 'react-native';
 var {height, width} = Dimensions.get('window');
 
-// export default function DigitButton({ label }) {
-//   return (
-//     <View style={styles.buttonContainer}>
-//       <Pressable style={styles.button} onPress={() => alert('You pressed a button.')}>
-//         <Text style={styles.buttonLabel}>{label}</Text>
-//       </Pressable>
-//     </View>
-//   );
-// }
 
 export default function FunctionButton({ label , arg1, arg2, argNum, arg1StateChanger, 
   arg2StateChanger, argNumStateChanger, currFunc, funcChanger}) {
