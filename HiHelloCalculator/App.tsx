@@ -35,7 +35,7 @@ const App = () => {
                 arg1StateChanger = {setarg1} arg2StateChanger = {setarg2} argNumStateChanger = {setArgNum} currFunc = {currFunc} funcChanger = {setCurrFunc}/>
             </View>
             <View>              
-              <FunctionButton label = '%' arg1 = {arg1} arg2 = {arg2} argNum = {argNum}
+              <FunctionButton label = '% (Not functional)' arg1 = {arg1} arg2 = {arg2} argNum = {argNum}
                 arg1StateChanger = {setarg1} arg2StateChanger = {setarg2} argNumStateChanger = {setArgNum} currFunc = {currFunc} funcChanger = {setCurrFunc}/>
             </View>
             <View>              
