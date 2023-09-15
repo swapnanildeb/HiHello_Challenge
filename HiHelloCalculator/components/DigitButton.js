@@ -1,10 +1,21 @@
-import { StyleSheet, View, Pressable, Text } from 'react-native';
+import { StyleSheet, View, Pressable, Text, Dimensions } from 'react-native';
+var {height, width} = Dimensions.get('window');
 
-export default function Button({ label }) {
+// export default function DigitButton({ label }) {
+//   return (
+//     <View style={styles.buttonContainer}>
+//       <Pressable style={styles.button} onPress={() => alert('You pressed a button.')}>
+//         <Text style={styles.buttonLabel}>{label}</Text>
+//       </Pressable>
+//     </View>
+//   );
+// }
+
+export default function DigitButton({ label }) {
   return (
-    <View style={styles.buttonContainer}>
+    <View  style={styles.buttonContainer}>
       <Pressable style={styles.button} onPress={() => alert('You pressed a button.')}>
-        <Text style={styles.buttonLabel}>{label}</Text>
+        <Text style ={styles.buttonLabel}>{label}</Text>
       </Pressable>
     </View>
   );
@@ -12,17 +23,13 @@ export default function Button({ label }) {
 
 const styles = StyleSheet.create({
   buttonContainer: {
-    width: 320,
-    height: 68,
-    marginHorizontal: 20,
+    width: width/4,
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 3,
   },
   button: {
-    borderRadius: 10,
-    width: '100%',
     height: '100%',
+    width: width/4,
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
