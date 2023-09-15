@@ -11,10 +11,10 @@ var {height, width} = Dimensions.get('window');
 //   );
 // }
 
-export default function DigitButton({ label }) {
+export default function DigitButton({ label , stateChanger}) {
   return (
     <View  style={styles.buttonContainer}>
-      <Pressable style={styles.button} onPress={() => alert('You pressed a button.')}>
+      <Pressable style={styles.button} onPress={() => stateChanger(label)}>
         <Text style ={styles.buttonLabel}>{label}</Text>
       </Pressable>
     </View>
